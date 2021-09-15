@@ -31,13 +31,13 @@ public class EditUserActivity extends AppCompatActivity {
         user = getIntent().getParcelableExtra("data");
         position = getIntent().getIntExtra("position", 0);
         TextView user_cardview = findViewById(R.id.user_cardview);
-        TextView display_textView_age = findViewById(R.id.cardview_age_result);
-        TextView display_textView_address = findViewById(R.id.cardview_address_result);
+        TextView card_age = findViewById(R.id.subtoolbar_int_age);
+        TextView display_textView_address = findViewById(R.id.subtoolbar_string_address);
         Button detail_button_edit = findViewById(R.id.detail_button_edit);
         Button detail_button_delete = findViewById(R.id.detail_button_delete);
 
         user_cardview.setText(user.getNama());
-        display_textView_age.setText(String.valueOf(user.getAge()));
+        card_age.setText(String.valueOf(user.getAge()));
         display_textView_address.setText(user.getAddress());
 
         detail_button_edit.setOnClickListener(new View.OnClickListener() {

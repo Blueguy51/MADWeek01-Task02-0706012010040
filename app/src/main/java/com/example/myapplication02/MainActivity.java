@@ -3,7 +3,6 @@ package com.example.myapplication02;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -15,14 +14,13 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
-import model.User;
 import model.Data;
+import model.User;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView main_recyclerView;
     private ArrayList<User> listUser = Data.saveList;
-    private TextView main_textView;
     private UserRVAdapter adapter;
     private FloatingActionButton main_FAB_add;
 
@@ -59,9 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 adapter.notifyDataSetChanged();
             }
         }
-        if (!listUser.isEmpty()) {
-            main_textView.setVisibility(View.GONE);
-        }
+
     }
 
     private void setListener() {

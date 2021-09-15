@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit_background" />
 
     <View
-        android:id="@+id/detail_age_bg"
+        android:id="@+id/subtoolbar_age"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="72dp"
@@ -56,7 +56,7 @@
         app:layout_constraintTop_toBottomOf="@+id/user_cardview" />
 
     <TextView
-        android:id="@+id/user_age"
+        android:id="@+id/subtoolbar_age_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -65,14 +65,14 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/detail_age_bg"
+        app:layout_constraintBottom_toBottomOf="@+id/subtoolbar_age"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
-        app:layout_constraintStart_toStartOf="@+id/detail_age_bg"
-        app:layout_constraintTop_toTopOf="@+id/detail_age_bg" />
+        app:layout_constraintStart_toStartOf="@+id/subtoolbar_age"
+        app:layout_constraintTop_toTopOf="@+id/subtoolbar_age" />
 
     <TextView
-        android:id="@+id/cardview_age_result"
+        android:id="@+id/subtoolbar_int_age"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -80,31 +80,31 @@
         android:text="age"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detail_age_bg" />
+        app:layout_constraintTop_toBottomOf="@+id/subtoolbar_age" />
 
     <TextView
-        android:id="@+id/cardview_textView_yearsold"
+        android:id="@+id/subtoolbar_yearsold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
         android:layout_marginTop="24dp"
         android:text="years old"
         android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@+id/cardview_age_result"
-        app:layout_constraintTop_toBottomOf="@+id/detail_age_bg" />
+        app:layout_constraintStart_toEndOf="@+id/subtoolbar_int_age"
+        app:layout_constraintTop_toBottomOf="@+id/subtoolbar_age" />
 
     <View
-        android:id="@+id/detail_address_bg"
+        android:id="@+id/subtoolbar_address"
         android:layout_width="0dp"
         android:layout_height="70dp"
         android:layout_marginTop="32dp"
         android:background="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardview_age_result" />
+        app:layout_constraintTop_toBottomOf="@+id/subtoolbar_int_age" />
 
     <TextView
-        android:id="@+id/detail_textView_address_title"
+        android:id="@+id/subtoolbar_address_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -113,13 +113,13 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/detail_address_bg"
-        app:layout_constraintEnd_toEndOf="@+id/detail_address_bg"
-        app:layout_constraintStart_toStartOf="@+id/detail_address_bg"
-        app:layout_constraintTop_toTopOf="@+id/detail_address_bg" />
+        app:layout_constraintBottom_toBottomOf="@+id/subtoolbar_address"
+        app:layout_constraintEnd_toEndOf="@+id/subtoolbar_address"
+        app:layout_constraintStart_toStartOf="@+id/subtoolbar_address"
+        app:layout_constraintTop_toTopOf="@+id/subtoolbar_address" />
 
     <TextView
-        android:id="@+id/cardview_address_result"
+        android:id="@+id/subtoolbar_string_address"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -130,14 +130,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detail_address_bg" />
+        app:layout_constraintTop_toBottomOf="@+id/subtoolbar_address" />
 
     <Button
         android:id="@+id/detail_button_delete"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="4dp"
         android:background="@android:color/holo_red_dark"
         android:backgroundTint="@color/design_default_color_error"
         android:drawablePadding="10dp"
@@ -156,8 +156,8 @@
         android:id="@+id/detail_button_edit"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
         android:background="@color/purple_500"
         android:backgroundTint="@color/purple_500"
         android:drawablePadding="10dp"
