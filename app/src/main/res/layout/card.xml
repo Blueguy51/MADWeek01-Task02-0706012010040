@@ -40,7 +40,7 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:id="@+id/display_imageView_item"
+                        android:id="@+id/card_imageView"
                         android:layout_width="118dp"
                         android:layout_height="111dp"
                         android:layout_marginTop="8dp"
@@ -60,8 +60,8 @@
                         android:textColor="@color/white"
                         android:textSize="20sp"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/display_imageView_item"
-                        app:layout_constraintTop_toTopOf="@+id/display_imageView_item" />
+                        app:layout_constraintStart_toEndOf="@+id/card_imageView"
+                        app:layout_constraintTop_toTopOf="@+id/card_imageView" />
 
                     <TextView
                         android:id="@+id/card_age"
@@ -74,7 +74,7 @@
                         android:textSize="20sp"
                         app:layout_constraintBottom_toTopOf="@+id/card_address"
                         app:layout_constraintEnd_toEndOf="@+id/card_fullname"
-                        app:layout_constraintStart_toEndOf="@+id/display_imageView_item"
+                        app:layout_constraintStart_toEndOf="@+id/card_imageView"
                         app:layout_constraintTop_toBottomOf="@+id/card_fullname" />
 
                     <TextView
@@ -86,9 +86,9 @@
                         android:textAlignment="textStart"
                         android:textColor="#FFFFFF"
                         android:textSize="20sp"
-                        app:layout_constraintBottom_toBottomOf="@+id/display_imageView_item"
+                        app:layout_constraintBottom_toBottomOf="@+id/card_imageView"
                         app:layout_constraintEnd_toEndOf="@+id/card_fullname"
-                        app:layout_constraintStart_toEndOf="@+id/display_imageView_item"
+                        app:layout_constraintStart_toEndOf="@+id/card_imageView"
                         app:layout_constraintTop_toBottomOf="@+id/card_age" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,14 +26,14 @@
         android:layout_height="150dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardview_name_result"
+        app:layout_constraintBottom_toTopOf="@+id/user_cardview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar3"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
-        android:id="@+id/cardview_name_result"
+        android:id="@+id/user_cardview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -53,10 +53,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardview_name_result" />
+        app:layout_constraintTop_toBottomOf="@+id/user_cardview" />
 
     <TextView
-        android:id="@+id/detail_textView_age_title"
+        android:id="@+id/user_age"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"

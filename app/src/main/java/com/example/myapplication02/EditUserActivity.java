@@ -30,13 +30,13 @@ public class EditUserActivity extends AppCompatActivity {
 
         user = getIntent().getParcelableExtra("data");
         position = getIntent().getIntExtra("position", 0);
-        TextView cardview_name_result = findViewById(R.id.cardview_name_result);
+        TextView user_cardview = findViewById(R.id.user_cardview);
         TextView display_textView_age = findViewById(R.id.cardview_age_result);
         TextView display_textView_address = findViewById(R.id.cardview_address_result);
         Button detail_button_edit = findViewById(R.id.detail_button_edit);
         Button detail_button_delete = findViewById(R.id.detail_button_delete);
 
-        cardview_name_result.setText(user.getNama());
+        user_cardview.setText(user.getNama());
         display_textView_age.setText(String.valueOf(user.getAge()));
         display_textView_address.setText(user.getAddress());
 
